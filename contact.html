@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Selamay Codes</title>
+    <meta name="description" content="About">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="cata active"><b style="font-size: 20px; padding-right: 20px;">Selamay Codes</b></a>
+        <a href="index.html" class="cata">Home</a>
+        <a href="aboutus.html" class="cata">About Us</a>
+        <a href="news.html" class="cata">News</a>
+        <a href="contact.html" class="cata highlight" style= "float: right;">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+         <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div> 
+        </a>
+    </div>
+    
+    <script>
+    function myFunction2() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+<!-- Contact Us -->
+    <br><br>
+    <h2 style="opacity: 1; color: white;">Contact Us</h2>
+   <p style="opacity: 0.7; line-height:30px; color: white;">We are always happy to answer any questions you may have</p>
+    <br>
+    <div id="contact" class="container3">
+      <form action="mailto:selamaydawit@gmail.com" method="post" enctype="text/plain">
+        <label for="fname"><b>First Name</b></label>
+        <input type="text" id="fname" name="First Name " placeholder="Your first name">
+
+        <label for="lname"><b>Last Name</b></label>
+        <input type="text" id="lname" name="Last Name " placeholder="Your last name">
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" id="email" name="Email Address " placeholder="Your email address">
+
+        <label for="phone"><b>Phone</b></label>
+        <input type="text" id="phone" name="Phone Number " placeholder="Your phone number">
+
+        <br>
+        <label for="course"><b>Service</b></label>
+        <select id="course" name="Course ">
+            <option value="Web Design & Development">Web Design & Development</option>
+            <option value="Online Market & Promoting">Internet Marketing & Online Promoting</option>
+            <option value="Branding & Consulting">Branding & Consulting</option>
+        </select>
+
+        <label for="subject"><b>Comment </b></label>
+        <textarea id="subject" name="Comment " placeholder="Write something" style="height:200px"></textarea>
+
+        <input type="submit" value="Send">
+      </form>
+    </div>
+    <br>
+<!-- Contact Us -->  
+
+<!-- Footer -->
+    <div class="footer">
+        <p>Developed By: Selamay Dawit</p>
+    </div>
+<!-- Footer -->
+</body>
+</html>

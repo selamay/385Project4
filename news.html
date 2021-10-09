@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Selamay Codes</title>
+    <meta name="description" content="About">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="cata active"><b style="font-size: 20px; padding-right: 20px;">Selamay Codes</b></a>
+        <a href="index.html" class="cata">Home</a>
+        <a href="aboutus.html" class="cata">About Us</a>
+        <a href="news.html" class="cata">News</a>
+        <a href="contact.html" class="cata highlight" style= "float: right;">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+         <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div> 
+        </a>
+    </div>
+    
+    <script>
+    function myFunction2() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+<!-- News -->
+  <div id="news" class="box3">
+  <br>
+   <h2 style="opacity: 1; color: white;">News</h2>
+   <hr style="width:150px; border: 3px solid white; border-radius: 10px;">
+  <br>
+   <div class="row">
+      <div class="column2" style="background-color:white;">
+        <div class="card2" onClick="document.getElementById('contact').scrollIntoView();">
+          <a href="https://en.wikipedia.org/wiki/Web_design">
+            <img src="img/web5.png" alt="Avatar" style="width:100%; border-radius: 5px;">
+          </a> 
+          <h4><b>Web Design & Development</b></h4> 
+          <p>We specialize in creating responsive, clean, and fully compatable HTML/CSS websites for you or your business. Our prices differ based on the contents of your website.</p> 
+        </div>
+      </div>
+       <div class="column2" style="background-color:white;">
+        <div class="card2" onClick="document.getElementById('contact').scrollIntoView();">
+          <a href="https://en.wikipedia.org/wiki/Digital_marketing">
+            <img src="img/store.png" alt="Avatar" style="width:100%; border-radius: 5px;">
+          </a>
+          <h4><b>Internet Marketing & Online Promoting</b></h4> 
+          <p>We have experience in online marketing and promotion that can help grow your business and capture your target audience. We work with Instagram, Facebook, and Twitter.</p>
+        </div>
+      </div>
+      <div class="column2" style="background-color:white;">
+        <div class="card2" onClick="document.getElementById('contact').scrollIntoView();">
+          <a href="https://en.wikipedia.org/wiki/Brand">
+            <img src="img/web2.png" alt="Avatar" style="width:100%; border-radius: 5px;">
+          </a>
+          <h4><b>Branding & Consulting</b></h4> 
+          <p>We specialize in providing professional business consulting and branding for startups and existing companies. We provide unique modern logo and graphic design.</p> 
+        </div>
+      </div>
+    </div>
+</div> 
+
+<!-- Footer -->
+    <div class="footer">
+        <p>Developed By: Selamay Dawit</p>
+    </div>
+<!-- Footer -->
+</body>
+</html>
